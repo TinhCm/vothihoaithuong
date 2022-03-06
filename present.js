@@ -28,26 +28,12 @@ function init() {
 
     }
 
-    (function($) {
-        play = $('#play');
-        pause = $('#pause');
-        stop = $('#stop');
-        volup = $('#volup');
-        voldown = $('#voldown');
-
-        //Song
-        song = new Audio();
-        song.type = 'audio/mpeg';
-        song.src = 'Alizee - La isla bonita.mp3';
-    })(jQuery);
-
     var playAudio = document.querySelector('#playAudio')
     if (gift_image_url) {
         _giftImg = document.createElement("img");
         _giftImg.src = gift_image_url;
         if (_giftLink) {
             _giftLink.appendChild(_giftImg);
-            song.pause();
         } else {
             presentImage.appendChild(_giftImg);
         }
